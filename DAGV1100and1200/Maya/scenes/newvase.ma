@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: newvase.ma
-//Last modified: Tue, Sep 22, 2026 11:28:55 PM
+//Last modified: Tue, Sep 22, 2026 11:30:33 PM
 //Codeset: 1252
 requires maya "2027";
 requires "mtoa" "5.6.2";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "04DC0AAD-4212-FB53-FD83-7FBB6693B551";
+fileInfo "UUID" "2C89E912-4408-3F1E-A8A9-2098B2273BD6";
 createNode transform -s -n "persp";
 	rename -uid "FFABC2F5-4361-D04D-FC61-1B898939676D";
 	setAttr ".v" no;
@@ -77,28 +77,6 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
-createNode transform -n "curve1";
-	rename -uid "36400F3D-43B6-1669-6FF1-2A841EECA25B";
-createNode nurbsCurve -n "curveShape1" -p "curve1";
-	rename -uid "B7BD9765-4E4D-40BE-DCC6-779B01B1535B";
-	setAttr -k off ".v";
-	setAttr ".cc" -type "nurbsCurve" 
-		3 9 0 no 3
-		14 0 0 0 1 2 3 4 5 6 7 8 9 9 9
-		12
-		0 11.150880656568837 -9.3417407270370791
-		0 11.791867471675477 -9.4302446282465358
-		0 12.415972036604423 -9.6072524306653797
-		0 14.346771905744404 -6.108725997086184
-		0 10.424072851831523 -5.8247089372145764
-		0 9.0859741500726798 -5.7226463402360643
-		0 6.519424835902325 -8.8161358763074809
-		0 3.3216668254480881 -8.8792853030826446
-		0 -0.070020179167007757 -4.7766486348317034
-		0 0.11618540458439265 -4.7102127022182483
-		0 0.038728468194797423 -1.5700709007394114
-		0 0 0
-		;
 createNode transform -n "pot";
 	rename -uid "66748DC3-4001-B114-56B7-459FB66F3ECE";
 	setAttr ".t" -type "double3" 0.11742625635510251 -0.36652298580951026 -0.23376459578627151 ;
